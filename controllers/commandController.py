@@ -10,7 +10,7 @@ class CommandRunner:
         async def tst():
             return await sendTestMsg(self.message)
 
-        # Публичные словари кортежей команд
+        # Public dictionaries of command tuples
         tTest = {('!test',): tst}
         self.commandsList = [tTest]
 
